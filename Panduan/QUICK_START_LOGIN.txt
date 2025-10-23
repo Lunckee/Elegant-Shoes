@@ -1,0 +1,163 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║         🔐 QUICK START: LOGIN CUSTOMER → SHOP.PHP                       ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📅 Updated: 21 Oktober 2025
+✅ Status: SIAP DIGUNAKAN!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 CARA TERCEPAT (2 MENIT):
+
+STEP 1: Buka phpMyAdmin
+   → http://localhost/phpmyadmin
+   
+STEP 2: Pilih database "elegant_shoes_db"
+
+STEP 3: Klik tab "SQL", paste query ini, klik "Go":
+
+INSERT INTO customers (name, email, phone, password, status) 
+VALUES (
+    'Customer Demo',
+    'customer@example.com',
+    '081234567890',
+    '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+    'active'
+);
+
+STEP 4: Buka browser
+   → http://localhost/project/login.php
+
+STEP 5: Login dengan:
+   Email    : customer@example.com
+   Password : password
+
+STEP 6: Klik "Login"
+
+SELESAI! Anda akan otomatis masuk ke shop.php! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆕 ATAU DAFTAR ACCOUNT BARU:
+
+STEP 1: http://localhost/project/register.php
+
+STEP 2: Isi form registrasi
+   - Nama Lengkap
+   - Email
+   - Password (min 6 karakter)
+   - Konfirmasi Password
+
+STEP 3: Klik "Daftar Sekarang"
+
+STEP 4: Klik link "Login di sini"
+
+STEP 5: Login dengan email & password yang baru dibuat
+
+SELESAI! Langsung masuk ke shop.php! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 FLOW SETELAH LOGIN:
+
+login.php → LOGIN SUCCESS → shop.php
+
+Header shop.php akan menampilkan:
+  ┌─────────────────────────────────────────────┐
+  │ 👤 Halo, Customer Demo!                     │
+  │ [Home] [Belanja] [Pesanan Saya] [Akun]     │
+  │                              [🛒 Keranjang] │
+  └─────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 DEMO ACCOUNT CREDENTIALS:
+
+Email    : customer@example.com
+Password : password
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 TEST COMPLETE FLOW:
+
+1. Login → shop.php                              ✅
+2. Browse produk → pilih produk                  ✅
+3. Klik "Tambah ke Keranjang"                    ✅
+4. Klik icon keranjang → cart.php                ✅
+5. Klik "Lanjut ke Pembayaran" → checkout.php    ✅
+6. Form auto-fill dengan data customer           ✅
+7. Klik "Buat Pesanan"                           ✅
+8. Order masuk ke database orders                ✅
+9. Redirect ke order_success.php                 ✅
+10. Lihat history di customer/orders.php         ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ PERUBAHAN YANG SUDAH DIBUAT:
+
+File: login.php
+
+SEBELUM:
+  header('Location: customer/dashboard.php');
+
+SEKARANG:
+  header('Location: shop.php');  ← UPDATED! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TROUBLESHOOTING
+
+❌ "Email atau password salah!"
+   → Jalankan SQL insert demo customer di atas
+   → Atau buat account baru via register.php
+
+❌ Masih redirect ke dashboard, bukan shop
+   → Clear browser cache (Ctrl + Shift + Del)
+   → Atau buka Incognito mode
+   → Login lagi
+
+❌ Blank page / error
+   → Check XAMPP Apache & MySQL running
+   → Check database elegant_shoes_db ada
+   → F12 untuk lihat error di console
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 FILE-FILE TERKAIT:
+
+✅ login.php                              - Halaman login (UPDATED!)
+✅ register.php                           - Registrasi customer
+✅ shop.php                               - Halaman belanja
+✅ cart.php                               - Keranjang
+✅ checkout.php                           - Form pemesanan
+✅ database/insert_demo_customer.sql     - SQL insert demo
+✅ CARA_LOGIN_CUSTOMER.md                - Dokumentasi lengkap
+✅ QUICK_START_LOGIN.txt                 - File ini
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 VERIFIKASI DATABASE
+
+Cek customer berhasil dibuat:
+
+  SELECT id, name, email, status 
+  FROM customers 
+  WHERE email = 'customer@example.com';
+
+Expected Output:
+  id | name          | email                  | status
+  ---|---------------|------------------------|--------
+  1  | Customer Demo | customer@example.com   | active
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ✅ READY TO USE!
+
+                   Silakan dicoba sekarang!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+

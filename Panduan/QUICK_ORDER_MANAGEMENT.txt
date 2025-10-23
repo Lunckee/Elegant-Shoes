@@ -1,0 +1,270 @@
+╔══════════════════════════════════════════════════════════════════════════╗
+║                                                                          ║
+║      🎯 QUICK GUIDE: Edit, Modif & Hapus Pesanan Customer               ║
+║                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+📅 Updated: 21 Oktober 2025
+✅ Status: FITUR LENGKAP - SIAP DIGUNAKAN!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 FITUR TERSEDIA:
+
+1. 👁️  VIEW    - Lihat detail pesanan lengkap
+2. ✏️  EDIT    - Edit status & alamat pengiriman  
+3. 🗑️  DELETE  - Hapus pesanan (PERMANEN!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CARA MENGGUNAKAN:
+
+STEP 1: Login Admin
+   → http://localhost/project/admin/login.php
+
+STEP 2: Buka Management Pesanan
+   → http://localhost/project/admin/orders.php
+
+STEP 3: Pilih Aksi
+
+   📌 LIHAT DETAIL (👁️)
+      → Klik tombol biru (icon mata)
+      → Modal muncul dengan detail lengkap
+      → Lihat data customer, alamat, produk, total
+   
+   📌 EDIT PESANAN (✏️)
+      → Klik tombol kuning (icon edit)
+      → Modal form edit muncul
+      → Edit:
+         • Status Pesanan (pending → delivered)
+         • Status Pembayaran (pending → paid)
+         • Status Pengiriman (pending → shipped)
+         • Alamat pengiriman
+         • Catatan pesanan
+      → Klik "Simpan Perubahan"
+      → Data ter-update! ✅
+   
+   📌 HAPUS PESANAN (🗑️)
+      → Klik tombol merah (icon trash)
+      → Konfirmasi dialog muncul
+      → Klik OK → Pesanan TERHAPUS PERMANEN! ❌
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 STATUS YANG BISA DIUBAH:
+
+Status Pesanan:
+  • pending      → Menunggu konfirmasi
+  • confirmed    → Dikonfirmasi
+  • processing   → Sedang diproses
+  • shipped      → Sudah dikirim
+  • delivered    → Sudah sampai ✅
+  • cancelled    → Dibatalkan
+  • refunded     → Di-refund
+
+Status Pembayaran:
+  • pending      → Belum bayar
+  • paid         → Sudah bayar ✅
+  • failed       → Gagal
+  • refunded     → Di-refund
+
+Status Pengiriman:
+  • pending      → Menunggu
+  • preparing    → Sedang disiapkan
+  • shipped      → Dikirim
+  • delivered    → Terkirim ✅
+  • returned     → Dikembalikan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎬 USE CASE: Customer Sudah Bayar
+
+1. Customer upload bukti transfer
+2. Admin buka orders.php
+3. Klik Edit (✏️) pada pesanan tersebut
+4. Ubah:
+   Status Pembayaran → paid
+   Status Pesanan → confirmed
+5. Klik "Simpan"
+6. DONE! Customer dapat notifikasi ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎬 USE CASE: Kirim Barang
+
+1. Barang sudah dikemas & ada resi
+2. Admin edit pesanan
+3. Ubah:
+   Status Pesanan → shipped
+   Status Pengiriman → shipped
+4. Tambah catatan: "Resi: JNE123456789"
+5. Simpan
+6. DONE! Customer tahu barang dikirim ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎬 USE CASE: Update Alamat
+
+1. Customer kontak untuk ganti alamat
+2. Admin edit pesanan
+3. Scroll ke "Alamat Pengiriman"
+4. Update:
+   - Alamat
+   - Kota
+   - Kode Pos
+5. Simpan
+6. DONE! Barang dikirim ke alamat baru ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎬 USE CASE: Cancel Order
+
+REKOMENDASI: Jangan hapus, tapi ubah status!
+
+1. Admin edit pesanan
+2. Ubah:
+   Status Pesanan → cancelled
+   Status Pembayaran → refunded (jika sudah bayar)
+3. Tambah catatan alasan cancel
+4. Simpan
+5. DONE! Order dibatalkan (data tetap ada untuk laporan) ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ PERINGATAN DELETE!
+
+DELETE = HAPUS PERMANEN!
+
+Yang ikut terhapus:
+  ❌ Data order
+  ❌ Order items (produk yang dipesan)
+  ❌ Alamat pengiriman
+  ❌ Data pembayaran
+  ❌ TIDAK BISA DI-UNDO!
+
+Kapan boleh delete?
+  ✅ Order test/dummy
+  ✅ Order duplikat
+  ✅ Order error
+
+Kapan JANGAN delete?
+  ❌ Order yang sudah delivered
+  ❌ Order untuk cancel (pakai status "cancelled")
+  ❌ Order dengan pembayaran (pakai status "refunded")
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 FILE YANG DIBUAT:
+
+Backend:
+  ✅ admin/orders.php                    - Main file (UPDATED)
+  ✅ admin/ajax/get_order_data.php      - Load data untuk edit
+  ✅ admin/ajax/get_order_details.php   - View detail
+
+Dokumentasi:
+  ✅ PANDUAN_EDIT_DELETE_ORDER.md       - Panduan lengkap
+  ✅ QUICK_ORDER_MANAGEMENT.txt         - Quick guide ini
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 TOMBOL DI TABEL PESANAN:
+
+Setiap baris pesanan punya 3 tombol:
+
+  [👁️]  Biru   = View Detail
+  [✏️]  Kuning = Edit
+  [🗑️]  Merah  = Delete
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 YANG BISA DIEDIT:
+
+✅ Status Pesanan (7 options)
+✅ Status Pembayaran (4 options)
+✅ Status Pengiriman (5 options)
+✅ Nama Penerima
+✅ Telepon Penerima
+✅ Alamat Lengkap
+✅ Kota, Provinsi, Kode Pos
+✅ Catatan Pengiriman
+✅ Catatan Pesanan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔒 KEAMANAN:
+
+✅ Login required (hanya admin yang bisa)
+✅ Konfirmasi sebelum delete
+✅ Transaction safe (rollback on error)
+✅ Activity log (semua perubahan tercatat)
+✅ SQL injection protected (prepared statements)
+✅ XSS protected (HTML escaping)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 TESTING CEPAT:
+
+1. Buka orders.php
+2. Klik View (👁️) → Lihat detail → Close
+3. Klik Edit (✏️) → Ubah status → Simpan → Cek ter-update
+4. Buat order test → Delete (🗑️) → Konfirmasi → Cek terhapus
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS:
+
+1. Gunakan filter untuk cari pesanan cepat
+2. Sort by tanggal untuk lihat pesanan terbaru
+3. Export data sebelum mass delete
+4. Backup database secara berkala
+5. Tambahkan catatan saat update status (untuk tracking)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 TROUBLESHOOTING:
+
+❌ Modal tidak muncul?
+   → Buka browser console (F12)
+   → Check error di console
+   → Check file ajax/ ada dan bisa diakses
+
+❌ Data tidak ter-update?
+   → Check connection database
+   → Check permission file
+   → Check activity logs untuk error
+
+❌ Delete tidak berfungsi?
+   → Allow pop-up di browser
+   → Check JavaScript enabled
+   → Test dengan browser lain
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 WORKFLOW IDEAL:
+
+1. Order masuk → Status: pending, Payment: pending
+2. Customer bayar → Edit: Payment → paid, Order → confirmed
+3. Siapkan barang → Edit: Order → processing
+4. Kirim barang → Edit: Order → shipped, Shipping → shipped
+5. Sampai tujuan → Edit: Order → delivered, Shipping → delivered
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ SUMMARY:
+
+Fitur        : Edit, View, Delete pesanan
+URL          : http://localhost/project/admin/orders.php
+Login        : admin/password
+Status       : ✅ SIAP DIGUNAKAN
+Dokumentasi  : PANDUAN_EDIT_DELETE_ORDER.md (lengkap)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    ✅ FITUR LENGKAP & SIAP PAKAI!
+
+                   Selamat mengelola pesanan! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+

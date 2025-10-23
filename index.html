@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Shoes - Sepatu Elegan & Minimalis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ELEGANT</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#products" class="nav-link">Produk <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="formal-shoes.html" class="dropdown-link">Formal Shoes</a></li>
+                        <li><a href="casual-shoes.html" class="dropdown-link">Casual Shoes</a></li>
+                        <li><a href="running-shoes.html" class="dropdown-link">Running Shoes</a></li>
+                        <li><a href="sport-shoes.html" class="dropdown-link">Sport Shoes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.php" class="nav-link" style="color: #667eea;">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.php" class="nav-link" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 20px; border-radius: 20px;">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin/login.php" class="nav-link admin-link">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sepatu Elegan untuk Gaya Hidup Modern</h1>
+            <p class="hero-subtitle">Temukan koleksi sepatu berkualitas tinggi dengan desain minimalis dan nyaman untuk aktivitas sehari-hari</p>
+            <button class="cta-button">Jelajahi Koleksi</button>
+        </div>
+        <div class="hero-image">
+                <img src="pictures/sneakers-shoe-logo-design-illustration-of-trending-youth-footwear-simple-funky-concept-free-vector.png" width="800" height="800">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Terbaru</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/running shoes.png" alt="Running Shoes" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Running Shoes</h3>
+                        <p>Sepatu lari dengan teknologi terbaru untuk performa optimal</p>
+
+                        <div class="product-price">Rp 899.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/formal shoes.jpg.png" alt="Formal Shoes" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Formal Shoes</h3>
+                        <p>Sepatu formal elegan untuk acara penting dan kantor</p>
+                        <div class="product-price">Rp 1.299.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/brown-leather-shoes.jpg" alt="Casual Shoes" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Casual Shoes</h3>
+                        <p>Sepatu kasual nyaman untuk aktivitas sehari-hari</p>
+                        <div class="product-price">Rp 699.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/photo-1637437757614-6491c8e915b5.jpeg" alt="Sports Shoes" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sports Shoes</h3>
+                        <p>Sepatu olahraga dengan dukungan maksimal untuk berbagai aktivitas</p>
+                        <div class="product-price">Rp 1.199.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang Elegant Shoes</h2>
+                    <p>Kami berkomitmen untuk menyediakan sepatu berkualitas tinggi dengan desain yang elegan dan minimalis. Setiap produk kami dirancang dengan memperhatikan kenyamanan, gaya, dan fungsionalitas untuk memenuhi kebutuhan gaya hidup modern Anda.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Kualitas Premium</h4>
+                            <p>Material berkualitas tinggi dan proses produksi yang teliti</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Desain Elegan</h4>
+                            <p>Konsep minimalis yang timeless dan selalu trendi</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Pengiriman Cepat</h4>
+                            <p>Layanan pengiriman yang cepat dan aman ke seluruh Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                        <img src="pictures/pexels-wendelmoretti-1972115.jpg" width="600" height="600">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Fashion Street No. 123<br>Jakarta Pusat, 10110</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 859 0427 7936</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>suryaindrawan383@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ELEGANT</h3>
+                    <p>Sepatu elegan untuk gaya hidup modern Anda</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/suryalight.revulution"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/surya_indrawan0/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@igustibagussuryaindrawan7899"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#">Running Shoes</a></li>
+                        <li><a href="#">Formal Shoes</a></li>
+                        <li><a href="#">Casual Shoes</a></li>
+                        <li><a href="#">Sports Shoes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Retur</a></li>
+                        <li><a href="#">Garansi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="admin/login.php" style="color: #3498db;"><i class="fas fa-user-shield"></i> Admin Login</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elegant Shoes. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

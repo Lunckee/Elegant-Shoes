@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Shoes - Elegant Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>ELEGANT</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin/login.php" class="nav-link admin-link">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Running Shoes Collection</h1>
+            <p class="hero-subtitle">Koleksi sepatu lari dengan teknologi terbaru untuk performa optimal. Didesain khusus untuk pelari dengan berbagai tingkat keahlian.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Model Tersedia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">42KM</span>
+                    <span class="stat-label">Marathon Ready</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="shoe-placeholder">
+                <i class="fas fa-running"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Running Shoes</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/running-shoes-1.jpg" alt="Speed Runner Pro" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Speed Runner Pro</h3>
+                        <p>Sepatu lari untuk kecepatan dengan teknologi responsive cushioning. Ideal untuk 5K dan 10K.</p>
+                        <div class="product-price">Rp 899.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/running-shoes-2.jpg" alt="Marathon Elite" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Marathon Elite</h3>
+                        <p>Sepatu marathon dengan teknologi advanced cushioning. Perfect untuk lari jarak jauh.</p>
+                        <div class="product-price">Rp 1.199.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/running-shoes-3.jpg" alt="Trail Explorer" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Trail Explorer</h3>
+                        <p>Sepatu trail running dengan grip maksimal. Cocok untuk lari di medan berbatu dan berlumpur.</p>
+                        <div class="product-price">Rp 999.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/running-shoes-4.jpg" alt="Daily Runner" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Daily Runner</h3>
+                        <p>Sepatu lari harian dengan keseimbangan kenyamanan dan performa. Perfect untuk pemula.</p>
+                        <div class="product-price">Rp 749.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Teknologi Running Shoes Kami</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Energy Boost</h3>
+                    <p>Teknologi responsive cushioning yang memberikan energi balik untuk performa maksimal</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Breathable Upper</h3>
+                    <p>Material upper yang breathable untuk sirkulasi udara optimal dan kenyamanan kaki</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Advanced Grip</h3>
+                    <p>Outsole dengan teknologi grip terdepan untuk traksi maksimal di berbagai medan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

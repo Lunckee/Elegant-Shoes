@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal Shoes - Elegant Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h2>ELEGANT</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin/login.php" class="nav-link admin-link">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Formal Shoes Collection</h1>
+            <p class="hero-subtitle">Koleksi sepatu formal elegan untuk acara penting, kantor, dan kesempatan khusus. Desain klasik dengan kualitas premium.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Model Tersedia</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Kulit Asli</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="shoe-placeholder">
+                <i class="fas fa-user-tie"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Koleksi Formal Shoes</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/formal-shoes-1.jpg" alt="Classic Oxford" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Oxford</h3>
+                        <p>Sepatu Oxford klasik dengan desain timeless. Cocok untuk acara formal dan kantor.</p>
+                        <div class="product-price">Rp 1.299.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/formal-shoes-2.jpg" alt="Executive Derby" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Executive Derby</h3>
+                        <p>Sepatu Derby elegan dengan finishing premium. Ideal untuk eksekutif dan profesional.</p>
+                        <div class="product-price">Rp 1.499.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/formal-shoes-3.jpg" alt="Premium Loafer" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Loafer</h3>
+                        <p>Loafer premium dengan desain modern. Nyaman untuk penggunaan sehari-hari di kantor.</p>
+                        <div class="product-price">Rp 1.199.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="pictures/formal-shoes-4.jpg" alt="Business Monk" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Business Monk</h3>
+                        <p>Sepatu Monk strap dengan gaya bisnis kontemporer. Perfect untuk meeting penting.</p>
+                        <div class="product-price">Rp 1.399.000</div>
+                        <button class="product-btn">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Mengapa Pilih Formal Shoes Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Kulit Premium</h3>
+                    <p>Menggunakan kulit asli berkualitas tinggi dengan proses tanning tradisional</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Handcrafted</h3>
+                    <p>Dibuat dengan teknik pembuatan sepatu tradisional yang telah disempurnakan</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Garansi 2 Tahun</h3>
+                    <p>Garansi kualitas dan keawetan sepatu selama 2 tahun dengan layanan purna jual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
